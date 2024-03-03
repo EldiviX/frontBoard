@@ -14,12 +14,12 @@ export const Registration = () => {
         Создание аккаунта
       </Typography>
       <div className={styles.avatar}>
-        <Avatar sx={{ width: 70, height: 70 }} />
+        <Avatar style={{ width: 70, height: 70, backgroundColor: '#797979' }} />
       </div>
       <TextField className={styles.field} label="Полное имя" fullWidth />
       <TextField className={styles.field} label="E-Mail" fullWidth />
       <TextField className={styles.field} label="Пароль" fullWidth />
-      <Button size="large" variant="contained" fullWidth>
+      <Button style={{ backgroundColor: '#3c3c3c' }} size="large" variant="contained" fullWidth>
         Зарегистрироваться
       </Button>
     </Paper>

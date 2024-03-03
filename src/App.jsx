@@ -8,7 +8,7 @@ export default function App() {
     return (
         <>
             <Header />
-            <Container maxWidth="lg">
+            <Container maxWidth="lg" sx={{ boxSizing: "border-box" }}>
                 <Routes>
                     <Route path="/" element={<Home />}/>
                     <Route path="/ads/:id" element={<FullAds />}/>

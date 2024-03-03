@@ -19,8 +19,8 @@ export const Login = () => {
         helperText="Неверно указана почта"
         fullWidth
       />
-      <TextField className={styles.field} label="Пароль" fullWidth />
-      <Button size="large" variant="contained" fullWidth>
+      <TextField style={{ forcedColorAdjust: "none" }} className={styles.field} label="Пароль" fullWidth />
+      <Button style={{ backgroundColor: "#3c3c3c" }} size="large" variant="contained" fullWidth>
         Войти
       </Button>
     </Paper>
