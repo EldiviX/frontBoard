@@ -14,7 +14,7 @@ export const Registration = () => {
         Создание аккаунта
       </Typography>
       <div className={styles.avatar}>
-        <Avatar sx={{ width: 100, height: 100 }} />
+        <Avatar sx={{ width: 70, height: 70 }} />
       </div>
       <TextField className={styles.field} label="Полное имя" fullWidth />
       <TextField className={styles.field} label="E-Mail" fullWidth />

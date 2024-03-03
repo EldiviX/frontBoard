@@ -7,7 +7,7 @@ import SimpleMDE from 'react-simplemde-editor';
 import 'easymde/dist/easymde.min.css';
 import styles from './AddPost.module.scss';
 
-export const AddPost = () => {
+export const AddAds = () => {
   const imageUrl = '';
   const [value, setValue] = React.useState('');
 
@@ -53,7 +53,7 @@ export const AddPost = () => {
       <TextField
         classes={{ root: styles.title }}
         variant="standard"
-        placeholder="Заголовок статьи..."
+        placeholder="Заголовок объявления..."
         fullWidth
       />
       <TextField classes={{ root: styles.tags }} variant="standard" placeholder="Тэги" fullWidth />
