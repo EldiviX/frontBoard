@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+.root {
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 200px;
+    max-height: 224px;
+    position: relative; /* Ensure .editButtons are positioned relative to this block */
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    display: flex; /* Assuming you want to keep flex layout for child elements */
+    flex-direction: column; /* Stack children vertically */
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05), 
+                0 2px 4px 0 rgba(0,0,0,0.05); /* Reduced box shadow for a subtler effect */
+}
+.image {
+    width: 100%; /* Make the image take full width of the container */
+    height: auto; /* Keep the image aspect ratio */
+    object-fit: cover; /* Cover the area without stretching */
+}
+.block {
+    display: flex;
+    align-items: flex-start; /* Align the image to the start (top left) */
+}
+
+.info {
+    padding: 15px;
+    text-align: left; /* Text is already aligned to the left */
+}
+
+.price {
+    font-size: 20px;
+}
+
+.title {
+    text-overflow: ellipsis;
+    font-size: 16px;
+    text-decoration: none; /* Remove underline from links in the title */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Add this to remove the highlighting of links */
+a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove underline from links */
+    background-color: transparent; /* Remove background highlight from links */
+}
+
+.editButtons {
+    position: absolute; /* Position the buttons absolutely relative to the .root */
+    top: 5px; /* Position from the top of the .root container */
+    right: 5px; /* Position from the right of the .root container */
+    opacity: 1; /* Make buttons visible */
+    transition: opacity 0.15s ease-in-out; /* Smooth transition for the opacity */
+    background-color: #ffffff80;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 10; /* Ensure buttons are above other content */
+}

@@ -23,9 +23,10 @@ export const Home = () => {
 
     const adsData = [...Array(20)].map(() => ({
         id: 1,
-        title: "Стул",
+        title: "Стул и стол",
+        price: "1000",
         imageUrl:
-            "https://res.cloudinary.com/practicaldev/image/fetch/s--UnAfrEG8--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/icohm5g0axh9wjmu4oc3.png",
+            "https://klp.ru/images/cache/no_image-640x480.jpg",
         createdAt: "12 июня 2022 г.",
         viewsCount: 150,
         commentsCount: 3,
